@@ -1,0 +1,650 @@
+@media (max-width:560px){
+    .header{
+        padding: 0 5px;
+    }
+    .header .logo{
+        width: 60%;
+    }
+}
+@media(max-width:500px){
+    html{
+        scroll-behavior: smooth;
+    }
+.mobile-navbar-btn{
+        display: block;
+        z-index: 999;
+        border: 1px solid #000;
+    }
+::-webkit-scrollbar{
+    display: none;
+}
+    .header{        
+        padding: 20px 30px;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        position: fixed;
+        z-index: 000;
+        box-sizing:border-box;
+        top: 0;
+    }
+.header.logo{
+    width: 40%;
+    margin: 0;
+    padding: 0%;
+}
+.navbar{
+    width: 50%;
+    height: 100vh;
+    background: black;
+    filter: blur(10%);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    /*transition*/
+    transform: translateX(100%);
+    transition: all 0.5s linear;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+.navbar-list{
+    flex-direction: column;
+    align-items: center;
+}
+.active .navbar{
+    transform: translateX(0);
+    opacity: 100;
+    visibility: visible;
+    pointer-events: auto;
+}
+.active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"]{
+    display: block;
+}
+.active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"]{
+    display: none;
+}
+
+#home{
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0%;
+    top: 0;
+    background: linear-gradient(to top, rgb(12, 143, 143), black);
+  
+}
+
+.parent{
+    width: 100%;
+    height: 38vw;
+    margin-top: 20px;
+    margin-left: 0%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.intro{
+    width: 50vw;
+    height: 40vw;
+    margin-left: 2vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #ddd;
+    float: inline-start;
+    
+    
+}
+.intro h1{
+    font-size: 8vw;
+    margin-top: 5vw;
+    color: cyan;
+
+    text-shadow: 3px 3px 2px #ddd;
+
+   
+}
+.intro h2{
+    font-size: 5vw;
+    color: #ddd;
+}
+.intro h3{
+    font-size: 3vw;
+    color :orange;
+}
+.intro p{
+    font-size: 2vw;
+    margin-top: 0vw;
+    
+}
+.download{
+    margin-top: 5vw;
+}
+.intro a{
+    width: 3vw;
+    height: 7vw;
+    background: linear-gradient(to top, cyan, rgb(233, 232, 232));
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3vw;
+    transition: 03.ms;
+    color: black;
+    text-decoration: none;
+    padding: 5px ;
+    border: 1px solid #ddd;
+   
+}
+.intro a:hover{ 
+    border-left:1px solid #ddd;
+    border-right: 1px solid #ddd;  
+    border-top:1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 5px;
+    box-shadow: 5px 7px 20px 5px cyan;
+}
+.pic-main{
+    width: 45vw;
+    height: 45vw;
+    margin-right: 6vw ;
+    margin-top: 50vw;
+    float: right;
+    border-radius: 50%;
+    background: cyan;
+    padding:7px;
+    box-shadow: 4px 4px 30px 30px rgb(15, 139, 139);
+    
+}
+.social_link{
+    width: auto;
+    margin-top: 430px;
+    align-items: center;
+    justify-content: center;
+    float: center;
+    align-self: flex-end;
+}
+.fa {
+    padding: 2vw;
+    font-size: 20px;
+    width: 10vw;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 12px;
+    border:3px solid #ddd;
+    border-radius: 5px;
+  }
+
+.fa:hover {
+    border: 3px solid cyan;
+    box-shadow: 3px 3px 3px 3px cyan;
+}
+.fa-facebook {
+    background: transparent;
+    color: white;
+  }
+  .fa-youtube {
+    background:transparent;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: transparent;
+    color: white;
+  }
+
+
+/*about*/
+
+#about{
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0%;
+    top: 0;
+    background: linear-gradient(to top, rgb(8, 100, 100), black);
+    overflow: hidden;
+    transition: translateY( 0.5s linear);
+}
+.notice{
+    text-align: right;
+    color:#ddd;
+    margin-right: 3%;
+    font-family: sans-serif;
+    font-size: medium;
+    margin-top: 52px;
+
+}
+.container{
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.aboutpic{
+    width: 40%;
+    height: 25vh;
+    margin-left: 30%;
+    float: center;
+    box-sizing: border-box;
+    border-radius: 30px;    
+    align-self: center;
+}
+.aboutme{
+    width: 100%;
+    height: 70vh;
+    margin-right: 20px;
+    float: right;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+.hello{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    color: cyan;
+    text-shadow: 3px 3px 3px cyan;
+    padding: 3px;
+    margin-top: 3vw;
+}
+.myname{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: orange;
+    text-shadow: 3px 3px 3px orange;
+    padding: 3px;
+}
+.main-content{
+    color : #ddd;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    padding: 3px;
+}
+.heading{
+    color: orange;
+    font-size: 20px;
+    padding: 3px;
+}
+ 
+ul li{
+   
+    color: #ddd;
+    padding: 3px;
+}
+
+
+
+/*Galary*/
+
+#galary{
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin-top: 50px;
+    top: 0;
+    background: linear-gradient(to top, rgb(8, 100, 100), black);
+    overflow: hidden;
+    
+}
+ .g-notice{
+    text-align: right;
+    color:#ddd;
+    margin-right: 3%;
+    font-family: sans-serif;
+    font-size: medium;
+    margin-top: 60px;
+
+}
+.note{
+    color :red;
+    font-style: bold;
+    margin-left: 2px;
+}
+.karan-con{
+    width: 100%;
+    height: 85vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    
+}
+
+.videos{
+    width: 100%;
+    height: 100vh;
+    background: transparent;
+    border-top: 2px solid orange;
+    overflow: hidden;
+    margin-left: 10px;
+    display: grid;
+    }
+.vidx{
+
+       background-color: #000;
+    width: 90%;
+    height: 30vh;
+        border-radius: 15px;
+        box-sizing: border-box;
+        box-shadow: 2px 2px 5px 5px orange;
+        margin: 2vw;
+        overflow: hidden;
+        display: flex;
+    }
+    .vidx:hover, .vidx:active{
+        cursor: pointer;
+        box-shadow: 2px 2px 5px 5px cyan;
+    }
+
+    .videot{
+            
+        width: 100%;
+        height: 30vh;
+        border-radius: 15px;
+        box-sizing: border-box;
+        box-shadow: 2px 2px 5px 5px orange;
+        overflow: hidden;
+        float: left;
+    }
+    .videot:hover, .videot:active{
+        box-shadow: 2px 2px 5px 5px cyan;
+    }
+   
+    .shorts{
+        width: 100%;
+        height: 50vh;
+        display:table;
+        overflow: hidden;
+        overflow-y: scroll;
+        margin-left: 20%;
+     
+       
+    }
+    .short-video{
+        width: 50%;
+        height: 60%;
+        border-radius: 15px;      
+        box-shadow: 2px 2px 5px 5px orange;
+        
+    }
+    .short-video:hover,.short-video:active{
+        box-shadow: 2px 2px 5px 5px cyan;
+        cursor: pointer;
+    }
+    .reel{            
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+        box-sizing: border-box;
+        box-shadow: 2px 2px 5px 5px orange;
+        overflow: hidden;
+      
+    }
+  
+   
+    .player{
+        z-index: 100;
+        width: 100%;
+        height: 100vh;
+        position:fixed;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,.8);
+        display: none;
+    }
+    .player video{
+        margin-top: 20px;
+        width: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border: 3px solid #fff;
+    }
+    span{
+        position: absolute;
+        top: 50px; right: 10px;       
+        color: #ddd;
+        font-size: 10vw;
+        float:right;
+        cursor: pointer;
+    
+    }
+    .player2{
+        z-index: 100;
+        width: 100%;
+        height: 100vh;
+        position:fixed;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,.8);
+        display: none;
+    }
+    .player2 video{
+        margin-top: 20px;
+        width: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border: 3px solid #fff;
+    }
+
+     /*project*/
+
+     #project{
+        width: 100%;
+        height: 100vh;
+        padding: 0;
+        margin-top: 50px;
+        top: 0;
+        background: linear-gradient(to top, rgb(8, 100, 100), black);
+        overflow: hidden;
+        overflow-y: scroll ;
+    }
+
+    .p-notice{
+        text-align: right;
+        color:#ddd;
+        margin-right: 3%;
+        font-family: sans-serif;
+        font-size: medium;
+        margin-top: 60px;
+    
+    }
+    .project-link{
+        width: 90%;
+        height: 30vh;
+        margin-top: 30px;
+        border-radius: 15px;
+        float: center;
+    }
+    .project-link:hover,.project-link:active{
+        rotate: -15deg;
+        width: 60%;
+        height: 25vh;
+        margin-top: 20px;
+        margin-left: 20%;
+        
+    }
+    .center{
+        width: 100%;
+        height: fit-content;
+        border-top: 2px solid orange;
+        display: grid;
+    
+    }
+
+    /*contact*/
+    #contact{
+        width: 100%;
+        height: 100vh;
+        padding: 0;
+        margin-top: 50px;
+        top: 0;        
+        background: linear-gradient(to top, rgb(8, 100, 100), black);
+        overflow: hidden;
+        overflow-y: scroll ;
+    }
+
+    .p-notice{
+        text-align: right;
+        color:#ddd;
+        margin-right: 3%;
+        font-family: sans-serif;
+        font-size: medium;
+        margin-top: 60px;
+    
+    }
+    .cc{
+        width: 100%;
+        height: 90.3vh;
+        border: 2px solid #fff;
+        background-color:#000;
+        color: #ddd;
+    }
+    .textani{
+        width: 100%;
+        height: 40%;
+        float: left;
+        box-sizing: border-box;
+        position: absolute;
+        align-items: center ;
+        justify-content: center;
+        
+    }
+    .textani ul{
+        list-style-type: none;
+        margin-left: 2%;
+    }
+    
+    .textani li{
+        font-size: 3.8vw;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .details_number{
+       border: 1px solid #fff;
+        margin-top: 93%;
+        width: 100%;
+        height: 50%;
+        box-shadow: 5px 5px 20px 20px cyan;
+       }
+       .detail-c{
+        float: left;
+        background: linear-gradient(to top , rgb(4, 95, 95),black);
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        
+       }
+        .na-facebook{
+            background: transparent;
+            color: cyan;
+    
+        }
+       
+       
+       .detail-c header{
+        align-items: center;
+        justify-content: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 8vw;
+        text-decoration: underline;
+        font-style: bold;
+        text-align: center;
+
+
+       }
+       .na {
+        padding: 5px;
+        font-size: 30px;
+        width: 30px;        
+        text-decoration: none;
+        margin: 10px 12px;
+        border:3px solid #ddd;
+        border-radius: 5px;
+        border: 3px solid cyan;
+        box-shadow: 3px 3px 3px 3px cyan;
+        color: cyan;
+       
+      }
+      .na-number {
+        background:transparent;
+        color: cyan;
+        float: left;
+        position: relative;
+        margin-left: 5%;
+        
+      }
+      
+      
+      .na-mail {
+        background: transparent;
+        color: cyan;
+        float: left;
+        margin-left:5% ;
+        
+
+      }  
+     .detail-c h3{
+        width: 100%;
+        font-size: 5vw;
+        margin-top:20px ;
+       
+     }
+      
+     .social-media{
+       
+        margin-top : 15%  ;
+        width: 100%;
+        height: fit-content;
+      
+
+     }
+     .social-media h2{
+        font-size: 5vw;
+        color:#fff;
+       margin-top: 20px;
+        width: 100%;
+        text-decoration: underline;
+
+     }
+     .na-whatsapp {
+        background: transparent;
+        color: cyan;
+        margin-top: 20px ;
+        margin-left: 1vw;
+
+      }
+      
+      .na-instagram {
+        background: transparent;
+        color: cyan;
+        margin-top: 20px ;
+        
+    
+      }
+      .na-facebook {
+        background: transparent;
+        color: cyan;
+        margin-top: 20px ;
+
+      }
+
+       .right{
+        background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy3iHr3mVTrGZ0q3S0iLA2P-_7bO03NOFqXQ&usqp=CAU");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 50%;
+        height: 100%;
+        border:1px solid #fff;
+        float: right;
+        display: none;
+       }
+
+}
